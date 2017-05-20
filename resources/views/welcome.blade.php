@@ -80,7 +80,7 @@
 
     <div class="content">
         <div class="title m-b-md animated fadeInDown">
-            Les Escrocs du Net
+            <img class="img-responsive" src="{{url('/images/logo.png')}}"/>
         </div>
     </div>
 </div>
