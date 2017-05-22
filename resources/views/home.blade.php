@@ -9,7 +9,7 @@
                     <div class="panel-body">
 
                             <h2>Bonjour, {{Auth::user()->name}}</h2>
-
+                            <img class="img-responsive" src="/images/{{ Auth::user()->avatar }}" style="max-height: 200px"/>
                             <br>
 
 
