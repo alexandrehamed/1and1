@@ -40,6 +40,10 @@ class Article extends Model
         return $this->hasMany('App\Com');
     }
 
+    public function images() {
+        return $this->belongsToMany('App\Image'); //  or whatever your namespace is
+    }
+
     public static function boot()
     {
         parent::boot();
