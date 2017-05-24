@@ -10,16 +10,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/animate.css">
-    <style>
-        body {
-            padding-top: 70px;
-            background: url("/images/back.png") no-repeat 0 center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
+    <link rel="stylesheet" href="/css/basic.css">
 
-        }
-    </style>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +36,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/home">HOME</a></li>
+                <li><a href="/">HOME</a></li>
                 <!-- <li><a href="/">Retour à l'accueil</a></li>
                 <li><a href="/messages">Messages @include('messenger.unread-count')</a></li>
                 <li><a href="/messages/create">Créer un Message</a></li> -->
@@ -58,7 +51,10 @@
                         <a href="{{ url('/admin') }}">Admin</a>
                     </li>
                     <li>
-                        <a href="{{ url('/article') }}">Articles</a>
+                        <a href="{{ url('/article') }}">Les offres</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/home') }}">Mes annonces</a>
                     </li>
 
 
@@ -120,6 +116,8 @@
 <div class="container">
     @yield('content')
 </div>
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
