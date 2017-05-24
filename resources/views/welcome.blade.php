@@ -102,7 +102,7 @@
         <div class="row">
             <div class=" m-g-t-10 col-md-offset-3 col-sm-offset-3 col-sm-6">
                 <div class="animated fadeInDown">
-                    <img class="img-responsive " src="{{url('/images/logo-blanc.png')}}" style="color: white"/>
+                    <img class="img-responsive " src="{{url('/images/logoblanc.png')}}" style="color: white"/>
                 </div>
             </div>
 
