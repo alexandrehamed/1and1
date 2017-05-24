@@ -107,3 +107,49 @@ background-image: url("https://static.wixstatic.com/media/bdada1_d6346b24988f442
     color:black;
     background-color: white;
 }
+
+
+
+
+/*css form*/
+.btn-form{
+/*padding-top: 0.8em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    padding-bottom: 0.8em;*/
+    width: 100%;
+    background-color: #7f2408;
+    color: white;
+}
+
+.btn-form:hover, .btn-form:focus {
+    background: #179b77;
+    transition: 1s;
+}
+
+
+.panel-heading {
+    padding: 10px 15px;
+    border:none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    color: black;
+}
+.bg-form{
+    background-color: white;
+}
+
+.input-form{
+    border-radius: 0px;
+    background-color: #c6c9d0;
+    color: black;
+    border: solid 0px #3f4042;
+}
+
+.input-form::placeholder{
+    color: black;
+}
+.m-g-t-3{
+    margin-top: 3em;
+}
+/*end form*/

@@ -43,7 +43,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/home">HOME</a></li>
+                <li><a href="/">HOME</a></li>
                 <!-- <li><a href="/">Retour à l'accueil</a></li>
                 <li><a href="/messages">Messages @include('messenger.unread-count')</a></li>
                 <li><a href="/messages/create">Créer un Message</a></li> -->
