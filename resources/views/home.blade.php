@@ -23,7 +23,7 @@
 
     <!-- Content Section -->
     <section id="section1">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <h1 CLASS="titre section-titre">MES ANNONCES</h1>
@@ -53,7 +53,7 @@
                                     </div>
 
                             @empty
-                                <h2>Aucun article</h2>
+                                    <h1 class="section-heading">Vous n'avez pas encore d'annonces ! </h1>
                             @endforelse
 
                             </ul>

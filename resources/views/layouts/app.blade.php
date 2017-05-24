@@ -49,9 +49,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand birch nav-fs" href="{{ url('/') }}">
                         <!-- {{ config('app.name', 'Laravel') }} -->
-                        Les Escrocs du Net
+                        Majord'Home
                     </a>
                 </div>
 

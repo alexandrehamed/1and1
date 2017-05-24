@@ -21,14 +21,9 @@ body {
     background-size: cover;
 }
 
-.image-bg-fixed-height {
-    background: url('http://i.f1g.fr/media/ext/1900x1900/madame.lefigaro.fr/sites/default/files/img/2015/07/un-ete-facon-downton-abbey.jpg') no-repeat center center scroll;
-    height: 200px;
-}
 
-.img-center {
-    margin: 0 auto;
-}
+
+
 
 section {
     padding : 60px;
@@ -62,9 +57,6 @@ section {
     text-align: center;
 }
 
-footer {
-    margin: 50px 0;
-}
 
 @media(max-width:768px) {
     section {
@@ -78,13 +70,6 @@ footer {
     }
 }
 
-.container {
-    width:100%;
-    padding: 0px;
-    text-align: center;
-
-
-}
 
 .back-head {
     opacity: 0.8;
@@ -93,6 +78,4 @@ footer {
     color: black;
 }
 
-#articles {
 
-}
