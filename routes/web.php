@@ -68,7 +68,9 @@ Route::get('showLists', 'ImageController@show' );
 
 
 Route::get('profile', 'UserController@profile');
-Route::post('profile', 'UserController@update_avatar');
+//Route::post('profile', 'UserController@update_avatar');
+Route::post('profile/avatar', 'UserController@update_avatar')->name('profile.avatar');
+Route::put('profile', 'UserController@update')->name('profile.update');
 
 
 
