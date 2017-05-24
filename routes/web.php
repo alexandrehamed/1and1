@@ -67,7 +67,8 @@ Route::post('imageUploadForm', 'ImageController@store' );
 Route::get('showLists', 'ImageController@show' );
 
 
-
+Route::get('profile', 'UserController@profile');
+Route::post('profile', 'UserController@update_avatar');
 
 
 
