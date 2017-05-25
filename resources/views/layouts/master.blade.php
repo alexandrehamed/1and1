@@ -10,7 +10,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/animate.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/app.css">
+=======
+    <link rel="stylesheet" href="/css/basic.css">
+
+>>>>>>> c238956026234e3f27e5b8c4de29f94aee74597b
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,6 +27,7 @@
 </head>
 <body>
 <nav class="navbar navbar-default navbar-static-top">
+
     <div class="container">
         <div class="navbar-header">
 
@@ -57,7 +63,10 @@
                         <a href="{{ url('/admin') }}">Admin</a>
                     </li>
                     <li>
-                        <a href="{{ url('/article') }}">Articles</a>
+                        <a href="{{ url('/article') }}">Les offres</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/home') }}">Mes annonces</a>
                     </li>
 
 
@@ -116,7 +125,10 @@
     </div>
 </nav>
 
+
     @yield('content')
+
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

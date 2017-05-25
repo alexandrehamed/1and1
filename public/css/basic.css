@@ -1,0 +1,81 @@
+
+body {
+
+    background-color: white;
+    color: black;
+
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+    background: url('http://www.vipbutlerservices.be/images_user/userfoto/fullsize/alb_203_11187152_908291635883926_8498733748268106053_o.jpg') no-repeat bottom scroll;
+    padding: 200px 0;
+    background-size: cover;
+}
+
+
+
+
+
+section {
+    padding : 60px;
+
+
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+    text-align: center;
+
+
+}
+
+.section-lead {
+    margin: 30px 0;
+    text-align: center;
+
+}
+
+.section-titre {
+    margin: 30px 0;
+    text-align: center;
+    border: 3px black solid;
+
+}
+
+.section-paragraph {
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
+
+
+.back-head {
+    opacity: 0.8;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+
+

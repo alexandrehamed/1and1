@@ -1,19 +1,42 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container">
-        <div class="row">
+
+
+
+
+    <body>
+
+
+
+    <!-- Full Width Image Header with Logo -->
+    <!-- Image backgrounds are set within the full-width-pics.css file. -->
+    <header class="image-bg-fluid-height">
+        <div class="back-head">
+
+
+            <h1 class="section-heading">Bonjour, {{Auth::user()->name}}</h1>
+
+        </div>
+
+    </header>
+
+    <!-- Content Section -->
+    <section id="section1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 CLASS="titre section-titre">MES ANNONCES</h1>
+                    <p class="lead section-lead">Voici la liste des annonces que vous avez publiez, n'hésitez pas à les modifier !</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" id="articles">
+
+
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-
-                    <div class="panel-body">
-
-                            <h2>Bonjour, {{Auth::user()->name}}</h2>
-                            <img class="img-responsive" src="/images/{{ Auth::user()->avatar }}" style="max-height: 200px"/>
-                            <br>
-
-
-                             <h2>Vos Articles :</h2>
 
                             <ul>
                             @forelse(Auth::user()->articles as $article)
@@ -30,16 +53,14 @@
                                     </div>
 
                             @empty
-                                <h2>Aucun article</h2>
+                                    <h1 class="section-heading">Vous n'avez pas encore d'annonces ! </h1>
                             @endforelse
 
                             </ul>
 
 
 
-                    </div>
-                </div>
             </div>
-        </div>
+
     </div>
 @endsection
