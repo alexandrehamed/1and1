@@ -4,8 +4,11 @@
     <style>
         body{
             background-image: url("https://images.pexels.com/photos/39665/tax-forms-income-business-39665.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
             background-size: cover;
             background-position: center;
+            background-repeat:no-repeat ;
         }
     </style>
 

@@ -105,13 +105,15 @@
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    <img src="/images/{{ Auth::user()->avatar }}" style="width:25px; height:25px; top:10px; left:10px; border-radius:50%">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
                                     <li>
                                         <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
+                                           onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
@@ -121,8 +123,7 @@
                                         </form>
                                     </li>
                                 </ul>
-                            </li>
-                        @endif
+                            </li>                        @endif
                     </ul>
                 </div>
             </div>

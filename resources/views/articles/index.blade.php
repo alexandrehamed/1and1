@@ -1,34 +1,51 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h1>Liste des articles</h1>
-                        <ul>
-                            @forelse($articles as $article)
-                                <br>
-                                <h2>{{ $article->title}}</h2>
-                                <strong>Créé par {{$article->user->name }}</strong>
-                                <hr>
-                                <p>{{ $article->content}}</p>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <a href="{{ route('article.show', $article->id) }}" class="btn btn-info">Voir</a>
-                                    </div>
-                                </div>
-                            @empty
-                                <h2>Aucun article</h2>
-                            @endforelse
-                            {{$articles->links()}}
-                        </ul>
-                        <a href="{{ route('article.create', $article->id) }}" class="btn btn-primary">Créer un article</a>
+
+        <section class="head-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 col-sm-offset-5 col-sm-2 text-center bg-head-title m-g-b-3 m-g-t-3">
+                        <h1 class="birch fs-head-title">Les offres</h1>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <section class="bg-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h1>nav categorie</h1>
+                    </div>
+                    <br>
+                    <div class="col-md-10">
+                        <div class="row">
+                            @forelse($articles as $article)
+                            <div class="col-md-4">
+                                <img src="https://excisionparlonsen.org/site/wp-content/themes/excision/images/default-thumb.png" class="img-responsive" alt="">
+                            </div>
+
+                            <div class="col-md-8">
+                                <h2>{{ $article->title}}</h2>
+                                <br>
+                                <strong>Créé par {{$article->user->name }}</strong>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p>{{ str_limit($article->content,150,2)}}</p>
+                                    </div>
+                                </div>
+                                <a href="{{ route('article.show', $article->id) }}"><button class="btn btn-liste">Plus d'information  <span class="glyphicon glyphicon-chevron-right anim"></span></button></a>
+                            </div>
+
+                        </div>
+                        <hr>
+                        @empty
+                            <h2>Aucun article</h2>
+                        @endforelse
+                        {{$articles->links()}}
+                    </div>
+                </div>
+            </div>
+        </section>
+
 @endsection

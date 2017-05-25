@@ -153,3 +153,52 @@ background-image: url("https://static.wixstatic.com/media/bdada1_d6346b24988f442
     margin-top: 3em;
 }
 /*end form*/
+
+
+/*offre liste*/
+.head-title{
+background-image: url("https://images.pexels.com/photos/284847/pexels-photo-284847.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+.fs-head-title{
+    font-size: 5em;
+    color: white;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.bg-head-title{
+    background-color: #7f2408;
+}
+
+
+.m-g-b-3{
+    margin-bottom: 3em;
+}
+
+.bg-content{
+    background-color: #c6c9d0;
+}
+
+.btn-liste{
+    border: solid 1px black;
+    color: white;
+    font-size: 1em;
+    border-radius: 0px;
+    background-color: black;
+
+}
+
+
+.btn-liste span {
+    cursor: pointer;
+
+}
+.anim{
+}
+
+/*fin liste*/

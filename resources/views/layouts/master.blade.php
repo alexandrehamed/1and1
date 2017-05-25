@@ -10,16 +10,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/animate.css">
-    <style>
-        body {
-            padding-top: 70px;
-            background: url("/images/back.png") no-repeat 0 center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            background-size: cover;
+    <link rel="stylesheet" href="/css/app.css">
 
-        }
-    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,25 +21,32 @@
     <![endif]-->
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
+
+            <!-- Collapsed Hamburger -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                <span class="sr-only">Toggle Navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
 
+            <!-- Branding Image -->
+            <a class="navbar-brand birch nav-fs" href="{{ url('/') }}">
+            <!-- {{ config('app.name', 'Laravel') }} -->
+                Majord'Home
+            </a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+
+        <div class="collapse navbar-collapse" id="app-navbar-collapse">
+            <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="/">HOME</a></li>
-                <!-- <li><a href="/">Retour à l'accueil</a></li>
-                <li><a href="/messages">Messages @include('messenger.unread-count')</a></li>
-                <li><a href="/messages/create">Créer un Message</a></li> -->
+                &nbsp;
             </ul>
+
+            <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 @if (Auth::guest())
@@ -111,10 +110,9 @@
                                 </form>
                             </li>
                         </ul>
-                    </li>
-                @endif
+                    </li>                        @endif
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </nav>
 
