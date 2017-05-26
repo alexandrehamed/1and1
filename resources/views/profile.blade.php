@@ -7,7 +7,7 @@
                 <div class="fiche">
                     <div class="head-fiche">
                         <img src="/images/avatar/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
-                        <h2>Profile de {{ $user->name }}</h2>
+                        <h1 class="birch">Profile de {{ $user->name }}</h1>
                         <form enctype="multipart/form-data" action="{{route('profile.avatar')}}" method="POST">
                             <label>Changer l'avatar</label>
                             <input type="file" name="avatar">

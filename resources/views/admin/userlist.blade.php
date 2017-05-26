@@ -9,6 +9,7 @@
                         @if(Auth::check())
                         <h1>Liste des utilisateurs</h1>
                         @forelse($users as $user)
+                                <img src="/images/avatar/{{ $user->avatar }}" style="width:50px; height:50px; float:left; border-radius:50%; margin-right:25px;">
                             <h4>{{$user->name}}</h4>
                             <form method="POST" action="{{ route('admin.destroyUser', $user->id) }}">
                                 {{ csrf_field() }}

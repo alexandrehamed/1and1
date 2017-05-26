@@ -25,6 +25,7 @@
                             @forelse($article->coms as $com)
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
+                                        <img src="/images/avatar/{{ $com->user->avatar }}" style="width:50px; height:50px; float:left; border-radius:50%; margin-right:25px;">
                                         <h4><strong>{{$com->user->name}}</strong></h4>
                                         <p>{{$com->commentaire}}</p>
                                         <br>
