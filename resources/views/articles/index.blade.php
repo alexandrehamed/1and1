@@ -19,8 +19,9 @@
                     </div>
                     <br>
                     <div class="col-md-10">
+                        @forelse($articles as $article)
+
                         <div class="row">
-                            @forelse($articles as $article)
                             <div class="col-md-4">
                                 <img src="https://excisionparlonsen.org/site/wp-content/themes/excision/images/default-thumb.png" class="img-responsive" alt="">
                             </div>
