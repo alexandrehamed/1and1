@@ -10,12 +10,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/animate.css">
-<<<<<<< HEAD
+
     <link rel="stylesheet" href="/css/app.css">
-=======
+
     <link rel="stylesheet" href="/css/basic.css">
 
->>>>>>> c238956026234e3f27e5b8c4de29f94aee74597b
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -101,7 +101,7 @@
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            <img src="/images/{{ Auth::user()->avatar }}" style="width:25px; height:25px; top:10px; left:10px; border-radius:50%">
+                            <img src="/images/avatar/{{ Auth::user()->avatar }}" style="width:25px; height:25px; top:10px; left:10px; border-radius:50%">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 

@@ -78,4 +78,21 @@ section {
     color: black;
 }
 
+.fiche{
+    border: solid 3px black;
+    margin:10px;
+    border-radius: 8px;
+}
+
+.head-fiche{
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-fiche{
+    padding: 20px;
+}
+
 
