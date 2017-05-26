@@ -95,4 +95,16 @@ section {
     padding: 20px;
 }
 
+#articles {
+    border: 1px black solid;
+    padding-bottom: 30px;
+    line-height: 2em;
+    background-color: black;
+
+}
+
+.home_annonces {
+
+    padding-bottom: 3em;
+}
 
