@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Laravel Messenger</title>
+    <title>Majord-Home</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -126,8 +126,46 @@
 </nav>
 
 
+
     @yield('content')
 
+
+<footer id="myFooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img class="img-responsive " src="{{url('/images/logoblanc.png')}}" style="color: white"/>
+            </div>
+            <div class="col-sm-2">
+                <h5>Navigation</h5>
+                <ul>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ route('logout') }}">Déconnexion</a></li>
+
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>à propos</h5>
+                <ul>
+                    <li><a href="http://www.devinci.fr/le-pole/ecoles/iim-institut-de-linternet-et-du-multimedia/">Notre école</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Harambe">le sponsor</a></li>
+
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+               <a href="https://www.facebook.com/romain.cakebool?fref=ts"><button type="button" class="btn btn-default" href="">Nous contacter</button></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

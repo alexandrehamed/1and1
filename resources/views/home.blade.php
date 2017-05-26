@@ -1,66 +1,46 @@
-@extends('layouts.master')
+        @extends('layouts.master')
 
-@section('content')
+        @section('content')
 
-
-
-
-    <body>
-
-
-
-    <!-- Full Width Image Header with Logo -->
-    <!-- Image backgrounds are set within the full-width-pics.css file. -->
-    <header class="image-bg-fluid-height">
-        <div class="back-head">
-
-
-            <h1 class="section-heading">Bonjour, {{Auth::user()->name}}</h1>
-
-        </div>
-
-    </header>
-
-    <!-- Content Section -->
-    <section id="section1">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 CLASS="titre section-titre">MES ANNONCES</h1>
-                    <p class="lead section-lead">Voici la liste des annonces que vous avez publiez, n'hésitez pas à les modifier !</p>
-
+            <!-- Content Section -->
+            <section class="head-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4 col-sm-offset-5 col-sm-2 text-center bg-head-title m-g-b-3 m-g-t-3">
+                            <h1 class="birch fs-head-title">Vos annonces</h1>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <div class="container" id="articles">
-
-
-            <div class="col-md-8 col-md-offset-2">
-
-                            <ul>
+            </section>
+            <br>
+            <section class="home_annonces">
+                <div class="container" id="articles">
+                    <div class="col-md-8 col-md-offset-2">
+                        <br>
+                        <ul>
                             @forelse(Auth::user()->articles as $article)
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h1>{{ $article->title}}</h1>
-                                            <p>{{ $article->content}}</p>
-                                            <br>
-                                            <p>
-                                                <a href="{{ route('article.show', $article->id) }}" class="btn btn-info">Voir</a>
-                                                <a href="{{ route('article.edit', $article->id) }}" class="btn btn-primary">Editer</a>
-                                            </p>
-                                        </div>
+                                <br>
+                                <hr>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h1>{{ $article->title}}</h1>
+                                        <p>{{ $article->content}}</p>
+                                        <p>
+                                            <a href="{{ route('article.show', $article->id) }}"><button class="btn btn-liste">Voir cette annonce  <span class="glyphicon glyphicon-eye-open"></span></button></a>
+
+                                            <a href="{{ route('article.edit', $article->id) }}"><button class="btn btn-liste">Modifier cette annonce  <span class="glyphicon glyphicon-pencil"></span> </button></a>
+                                        </p>
                                     </div>
+                                </div>
+
 
                             @empty
-                                    <h1 class="section-heading">Vous n'avez pas encore d'annonces ! </h1>
+                                <h1 class="section-heading">Vous n'avez pas encore d'annonces ! </h1>
                             @endforelse
 
-                            </ul>
+                        </ul>
+                        </div>
+                </div>
+            </section>
 
-
-
-            </div>
-
-    </div>
-@endsection
+        @endsection

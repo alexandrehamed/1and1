@@ -202,3 +202,76 @@ background-image: url("https://images.pexels.com/photos/284847/pexels-photo-2848
 }
 
 /*fin liste*/
+
+
+
+/*Footer*/
+
+#myFooter {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+
+}
+
+
+
+#myFooter .row {
+    margin-bottom: 25px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 40px;
+    height: 55px;
+}
+
+
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#myFooter .btn {
+    color: white;
+    background-color: #7f2408;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+/*fin footer*/
