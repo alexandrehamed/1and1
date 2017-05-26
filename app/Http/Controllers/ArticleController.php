@@ -57,6 +57,15 @@ class ArticleController extends Controller
                 'content.required' => 'Un descriptif est requis . '
             ]
             );
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->resize(1600, 1200)->save( public_path('/images/annonce/' . $filename ) );
+
+            $article = Article::find($id);
+            $article->image = $filename;
+            $article->save();
+        }
 
         Article::create([
             'user_id' => Auth::user()->id,
@@ -144,7 +153,6 @@ class ArticleController extends Controller
         }
 
         Article::find($id)->update([
-            'user_id' => Auth::user()->id,
             'title' => $request->title,
             'content' => $request->content,
         ]);

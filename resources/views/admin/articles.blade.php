@@ -13,12 +13,14 @@
 
                         @forelse($articles as $article)
                             <br>
+                            <div class="row">
+                            <img src="/images/annonce/{{ $article->image }}" style=" float:left; margin-right:25px; width: 50%;" class="img-responsive" alt="">
                             <h2>{{ $article->title}}</h2>
                             <strong>Créé par {{$article->user->name }}</strong>
                             <hr>
 
-                            <div class="row">
-                                <div class="col-md-8">
+
+
                                     <a href="{{ url('/admin/show', $article->id) }}" class="btn btn-info">Voir</a>
 
                                     <a href="{{ route('article.edit', $article->id) }}" class="btn btn-primary">Modifier</a>
@@ -28,7 +30,7 @@
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input value="Supprimer" type="submit" class="btn btn-danger">
                                     </form>
-                                </div>
+
                             </div>
                         @empty
                             <h2>Aucun article</h2>

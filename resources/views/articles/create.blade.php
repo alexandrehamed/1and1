@@ -19,6 +19,10 @@
 
                         <form method="POST" action="{{route('article.store')}}">
                         {{csrf_field()}}
+                            <label>Changer l'image</label>
+                            <input type="file" name="image">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <br>
                         <input type="text" name="title" placeholder="Titre" class="form-control">
                         <br>
                             <textarea name="content" id="" class="form-control" rows="10"></textarea>
