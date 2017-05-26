@@ -23,7 +23,8 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="https://excisionparlonsen.org/site/wp-content/themes/excision/images/default-thumb.png" class="img-responsive" alt="">
+                                <img src="/images/annonce/{{ $article->image }}" style=" float:left; margin-right:25px;" class="img-responsive" alt="">
+
                             </div>
 
                             <div class="col-md-8">

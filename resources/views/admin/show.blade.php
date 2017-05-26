@@ -8,6 +8,7 @@
 
                     <div class="panel-body col-md-offset-1">
                         @if(Auth::check())
+                            <img src="/images/annonce/{{ $article->image }}" style="  margin-right:25px; margin-bottom: 25px; width: 80%;" class="img-responsive" alt="">
                             <h1>{{ $article->title}}</h1>
 
                             <ul>

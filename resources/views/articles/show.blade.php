@@ -6,6 +6,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body col-md-offset-1">
+                        <img src="/images/annonce/{{ $article->image }}" style=" float:left; margin-right:25px; margin-bottom: 25px; width: 80%;" class="img-responsive" alt="">
                         <div class="addthis_inline_share_toolbox"></div>
                         <h1>{{ $article->title}}</h1>
 

@@ -6,6 +6,7 @@ use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Com;
+use Image;
 
 class ArticleController extends Controller
 {
@@ -132,6 +133,15 @@ class ArticleController extends Controller
                 'content.required' => 'Un descriptif est requis . '
             ]
         );
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            Image::make($image)->resize(1600, 1200)->save( public_path('/images/annonce/' . $filename ) );
+
+            $article = Article::find($id);
+            $article->image = $filename;
+            $article->save();
+        }
 
         Article::find($id)->update([
             'user_id' => Auth::user()->id,

@@ -11,9 +11,13 @@
 
 
 
-                        <form method="POST" action="{{route('article.update', $article->id)}}">
+                        <form method="POST" action="{{route('article.update', $article->id)}}" enctype="multipart/form-data">
                             {{csrf_field()}}
                             <input type="hidden" name="_method" value="put">
+                            <label>Changer l'image</label>
+                            <input type="file" name="image">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <br>
                             <input required type="text" value="{{$article->title}}" name="title" class="form-control">
                             <br>
                             <br>
