@@ -14,8 +14,9 @@
             </section>
             <br>
             <section class="home_annonces">
+
                 <div class="container" id="articles">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-12">
                         <br>
                         <ul>
                             @forelse(Auth::user()->articles as $article)
@@ -49,7 +50,7 @@
                                         </div>
 
                                     </div>
-                                </div>
+                                <hr>
 
 
 
