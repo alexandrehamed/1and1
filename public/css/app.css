@@ -277,5 +277,22 @@ background-image: url("https://images.pexels.com/photos/284847/pexels-photo-2848
     }
 }
 
+.fiche{
+    border: solid 3px black;
+    border-radius: 8px;
+    margin: 10px;
+
+}
+
+.head-fiche{
+    color:white;
+    background-color:black;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-fiche{
+    padding: 20px;
+}
 
 /*fin footer*/
