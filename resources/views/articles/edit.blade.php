@@ -7,7 +7,7 @@
                 <div class="panel panel-default">
 
                     <div class="panel-body col-md-offset-1">
-                        <h1>Modification d'article</h1>
+                        <h1>Modification d'annonce</h1>
 
 
 

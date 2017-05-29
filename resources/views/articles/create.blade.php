@@ -7,7 +7,7 @@
                 <div class="panel panel-default">
 
                     <div class="panel-body col-md-offset-1">
-                        <h1>Création d'article</h1>
+                        <h1>Création d'annonce</h1>
 
                         @if (count($errors) > 0)
                             <ul>

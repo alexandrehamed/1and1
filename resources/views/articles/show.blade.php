@@ -13,6 +13,9 @@
                         <ul>
                             <strong>Créé par {{$article->user->name }}</strong>
                             <br>
+                            <p>{{$article->user->email}}</p>
+                            <p>{{$article->user->number}}</p>
+                            <br>
                             <hr>
                             <p>{{ $article->content}}</p>
                             <hr>
@@ -37,6 +40,7 @@
                             @endforelse
 
                         </ul>
+                        @if (Auth::check())
                         <h3>Commenter :</h3>
                         <form method="POST" action="{{route('article.comment', $article->id)}}">
                             {{csrf_field()}}
@@ -44,6 +48,9 @@
                             <br>
                             <input type="submit" value="Commenter">
                         </form>
+                            @else
+                            <h3>Connectez-vous pour commenter</h3>
+                            @endif
                     </div>
                 </div>
             </div>

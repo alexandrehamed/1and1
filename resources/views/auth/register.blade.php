@@ -62,7 +62,7 @@ background-image: url("https://images.pexels.com/photos/159353/survey-opinion-re
                         <div class="form-group">
                             <div class=" col-sm-offset-2 col-sm-8 text-center">
                                 <button type="submit" class="btn btn-form">
-                                    Register
+                                    S'enregistrer
                                 </button>
                             </div>
                         </div>

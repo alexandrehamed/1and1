@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2 m-g-t-3 bg-form">
             <div class="">
-                <div class="panel-heading birch ft-box text-center">Login</div>
+                <div class="panel-heading birch ft-box text-center">Connexion</div>
                 <div class="">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
@@ -50,7 +50,7 @@
                             <div class="col-md-6 col-md-offset-2">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Se souvenir de moi
                                     </label>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
+                                    Mot de passe oublié?
                                 </a>
                             </div>
                         </div>
