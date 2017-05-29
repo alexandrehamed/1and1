@@ -54,9 +54,11 @@
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
                 @else
+                    @if (Auth::user()->is_admin == 1)
                     <li>
                         <a href="{{ url('/admin') }}">Admin</a>
                     </li>
+                    @endif
                     <li>
                         <a href="{{ url('/article') }}">Les offres</a>
                     </li>
