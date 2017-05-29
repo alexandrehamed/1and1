@@ -18,10 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/aboutus', function () {
+    return view('aboutus');
+});
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
 
 //ici , tout les url qui commencent par article auron article controller //
 

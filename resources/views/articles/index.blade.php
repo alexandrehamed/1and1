@@ -37,14 +37,20 @@
                                     </div>
                                 </div>
                                 <a href="{{ route('article.show', $article->id) }}"><button class="btn btn-liste">Plus d'information  <span class="glyphicon glyphicon-chevron-right anim"></span></button></a>
+
                             </div>
 
                         </div>
                         <hr>
                         @empty
                             <h2>Aucun article</h2>
+
                         @endforelse
+
+
                         {{$articles->links()}}
+
+
                     </div>
                 </div>
             </div>

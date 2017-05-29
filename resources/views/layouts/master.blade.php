@@ -63,6 +63,9 @@
                     <li>
                         <a href="{{ url('/home') }}">Mes annonces</a>
                     </li>
+                    <li>
+                        <a href="{{ url('/article/create') }}">Créer une annonce</a>
+                    </li>
 
 
 
@@ -77,16 +80,27 @@
                         </ul>
                     </li>
 
+                    <li>
+                        <a href="{{ url('/aboutus') }}">A propos de nous</a>
+                    </li>
+                    <!--
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            Images <span class="caret"></span>
+                            Galerie <span class="caret"></span>
                         </a>
-
+                        <!
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/showLists">Voir les Images </a></li>
                             <li><a href="imageUploadForm">upload une nouvelle image</a></li>
                         </ul>
                     </li>
+                    -->
+
+
+
+
+
+
 
 
 
