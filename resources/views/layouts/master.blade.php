@@ -21,6 +21,7 @@
     <![endif]-->
 </head>
 <body>
+<div class="wrapper">
 <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
@@ -54,9 +55,11 @@
                     <li><a href="{{ route('login') }}">Login</a></li>
                     <li><a href="{{ route('register') }}">Register</a></li>
                 @else
+                    @if (Auth::user()->is_admin == 1)
                     <li>
                         <a href="{{ url('/admin') }}">Admin</a>
                     </li>
+                    @endif
                     <li>
                         <a href="{{ url('/article') }}">Les offres</a>
                     </li>
@@ -135,11 +138,14 @@
 </nav>
 
 
-
     @yield('content')
+    <div class="push"></div>
+</div>
 
 
-<footer id="myFooter">
+
+
+<footer id="myFooter" class="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">

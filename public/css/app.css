@@ -182,9 +182,7 @@ background-image: url("https://images.pexels.com/photos/284847/pexels-photo-2848
     margin-bottom: 3em;
 }
 
-.bg-content{
-    background-color: #c6c9d0;
-}
+
 
 .btn-liste{
     border: solid 1px black;
@@ -483,3 +481,33 @@ background-image: url("https://images.pexels.com/photos/284847/pexels-photo-2848
 
 
 /*fin about us */
+.fiche{
+    border: solid 3px black;
+    border-radius: 8px;
+    margin: 10px;
+
+}
+
+.head-fiche{
+    color:white;
+    background-color:black;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-fiche{
+    padding: 20px;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -142px;
+}
+
+.push{
+    height: 142px;
+}
