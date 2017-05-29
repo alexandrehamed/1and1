@@ -37,7 +37,7 @@
                     @if (Auth::check())
                         <li><a href="{{url('/home')}}" class="nav-fs">Home</a></li>
                     @else
-                        <li><a href="{{ url('/register') }}" class="nav-fs"><span class="glyphicon glyphicon-user"></span> Inscrition</a></li>
+                        <li><a href="{{ url('/register') }}" class="nav-fs"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
                         <li><a href="{{ url('/login') }}" class="nav-fs"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
                     @endif
                 @endif
