@@ -21,6 +21,7 @@
     <![endif]-->
 </head>
 <body>
+<div class="wrapper">
 <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
@@ -123,11 +124,14 @@
 </nav>
 
 
-
     @yield('content')
+    <div class="push"></div>
+</div>
 
 
-<footer id="myFooter">
+
+
+<footer id="myFooter" class="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
