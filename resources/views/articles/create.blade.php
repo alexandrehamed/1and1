@@ -7,7 +7,7 @@
                 <div class="panel panel-default">
 
                     <div class="panel-body col-md-offset-1">
-                        <h1>Création d'article</h1>
+                        <h1>Créer un article</h1>
 
                         @if (count($errors) > 0)
                             <ul>
@@ -27,6 +27,12 @@
                         <br>
                             <textarea name="content" id="" class="form-control" rows="10"></textarea>
                         <br>
+                            <select name="categorie_id" id="categorie">
+                                @foreach($categories as $categorie)
+                                    <option value="{{ $categorie->id }}">{{ $categorie->name }}</option>
+                                @endforeach
+                            </select>
+                            <br>
                         <input type="submit" value="Créer">
                         </form>
                     </div>

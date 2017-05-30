@@ -73,6 +73,7 @@ Route::post('profile/avatar', 'UserController@update_avatar')->name('profile.ava
 Route::put('profile', 'UserController@update')->name('profile.update');
 
 
-
+// categorie
+Route::resource('categorie','CategorieController');
 
 

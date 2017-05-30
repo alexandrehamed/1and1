@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Categorie;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Com;
@@ -18,8 +19,11 @@ class ArticleController extends Controller
     public function index()
     {
         $articles = Article::paginate(6);
+        $categories = Categorie::all();
+
         return view('articles.index' , [
-            'articles' => $articles
+            'articles' => $articles,
+            'categories' =>$categories,
         ]);
     }
 
@@ -30,7 +34,13 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('articles.create');
+        $categories = Categorie::all();
+
+        return view('articles.create',[
+            'categories' => $categories
+        ]);
+
+
     }
 
     /**
@@ -49,12 +59,14 @@ class ArticleController extends Controller
         $this->validate($request,
             [
                 'title' => 'required',
-                'content' => 'required'
+                'content' => 'required',
+                'categorie_id' =>'required'
             ],
             [
 
                 'title.required' => 'Un titre est requis. ',
-                'content.required' => 'Un descriptif est requis . '
+                'content.required' => 'Un descriptif est requis . ',
+                'categorie_id' => 'une categorie doit etre renseignée'
             ]
             );
         if($request->hasFile('image')){
@@ -71,6 +83,7 @@ class ArticleController extends Controller
             'user_id' => Auth::user()->id,
             'title' => $request->title,
             'content' => $request->content,
+            'categorie_id'=>$request->categorie_id
         ]);
 
 

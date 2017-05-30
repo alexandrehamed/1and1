@@ -2,33 +2,29 @@
 
 @section('content')
 
-        <section class="head-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4 col-sm-offset-5 col-sm-2 text-center bg-head-title m-g-b-3 m-g-t-3">
-                        <h1 class="birch fs-head-title">Les offres</h1>
-                    </div>
+    <section class="head-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-offset-5 col-sm-2 text-center bg-head-title m-g-b-3 m-g-t-3">
+                    <h1 class="birch fs-head-title">Les offres</h1>
                 </div>
             </div>
-        </section>
-        <section class="bg-content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2">
-                        <h1 class="birch">categorie</h1>
-                        <div class="">
+        </div>
+    </section>
+    <section class="bg-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <h1>nav categorie</h1>
+                    <div class="filter-menu" id="filter">
                         @foreach($categories as $categorie)
-                                <div class="category-bg">
-                                <a href="{{ route('categorie.show', $categorie->id) }}" class="category-btn"> {{ $categorie->name }}</a>
-                                <br>
-                                <hr>
-                                </div>
-                            @endforeach
-                        </div>
+                        <a href="{{ route('categorie.show', $categorie->id) }}"><button class="btn btn-default"> {{ $categorie->name }}</button></a>
+                        @endforeach
                     </div>
-                    <br>
-                    <div class="col-md-10 itembox ">
-                        @forelse($articles as $article)
+                </div>
+                <br>
+                <div class="col-md-10 itembox ">
+                    @forelse($articles as $article)
 
                         <div class="row {{ $article->categorie->name }}">
                             <div class="col-md-4">
@@ -50,13 +46,12 @@
 
                         </div>
                         <hr>
-                        @empty
-                            <h2>Aucun article</h2>
-                        @endforelse
-                        {{$articles->links()}}
-                    </div>
+                    @empty
+                        <h2>Aucun article</h2>
+                    @endforelse
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 @endsection
