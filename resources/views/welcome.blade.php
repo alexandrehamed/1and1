@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Laravel</title>
+    <link rel="shortcut icon" href="{{ asset('images/avatar/default.png') }}">
+    <title>Majord'Home</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -14,57 +14,7 @@
     <link rel="stylesheet" href="/css/app.css">
 
     <!-- Styles -->
-    <style>
-        html, body {
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            margin: 0;
 
-        }
-        .full-height {
-            height: 100vh;
-        }
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links > a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -87,8 +37,8 @@
                     @if (Auth::check())
                         <li><a href="{{url('/home')}}" class="nav-fs">Home</a></li>
                     @else
-                        <li><a href="{{ url('/register') }}" class="nav-fs"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="{{ url('/login') }}" class="nav-fs"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="{{ url('/register') }}" class="nav-fs"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
+                        <li><a href="{{ url('/login') }}" class="nav-fs"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
                     @endif
                 @endif
             </ul>
@@ -112,13 +62,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6 box-1 text-center grow pic">
-                <a href="#"><h1 class="birch ft-box">Qui sommes nous ?</h1></a>
-                <button class="btn btn-lg  btn-1 btn-style">En savoir plus</button>
+                <h1 class="birch ft-box">Qui sommes nous ?</h1>
+                <a href="{{ url('/aboutus') }}"><button class="btn btn-lg  btn-1 btn-style">En savoir plus</button></a>
             </div>
             <div class="col-sm-6 box-2 text-center">
-               <a href="#"><h1 class="birch ft-box">Consulter les offres</h1></a>
+               <h1 class="birch ft-box">Consulter les offres</h1>
 
-                <button class="btn btn-lg btn-2 btn-style">En savoir plus</button>
+                <a href="{{ url('/article') }}"><button class="btn btn-lg btn-2 btn-style">En savoir plus</button></a>
             </div>
         </div>
     </div>

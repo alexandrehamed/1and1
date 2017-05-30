@@ -182,9 +182,7 @@ background-image: url("https://images.pexels.com/photos/284847/pexels-photo-2848
     margin-bottom: 3em;
 }
 
-.bg-content{
-    background-color: #c6c9d0;
-}
+
 
 .btn-liste{
     border: solid 1px black;
@@ -296,3 +294,242 @@ background-color: black;
 }
 
 /*fin footer*/
+
+/* about us */
+
+
+#drp
+{
+    background-color:#0B4C5F;
+
+}
+
+#home
+{
+    color:white;
+}
+
+
+
+
+.center
+{
+    width:100%;
+    height:auto;
+    background-color:#F2F2F2;
+    padding-top: 40px;
+
+}
+.center-main
+{
+    width:90%;
+    margin:auto;
+    background-color:#F2F2F2;
+}
+
+.center-left h2
+{
+    color:#424242;
+
+}
+.center-left p
+{
+    color:#424242;
+}
+.progress
+{
+    height:30px;
+}
+.center-middle
+{
+    clear:both;
+    background-color:white;
+    background-color:#F2F2F2;
+}
+.paragraph
+{
+    padding-top:10px;
+    text-align:center;
+    color:#424242;
+}
+
+.pict img
+{
+    border-radius:50%;
+    width:100px;
+    border:4px solid white;
+
+}
+.txt
+{
+    color:#848484;
+    line-height:10px;
+}
+.caption h5
+{
+    color:#2E2E2E;
+    line-height:2px;
+}
+
+.thumbnail
+{
+    text-align:center;
+    width:180px;
+    height:270px;
+    border:1px solid #F2F2F2;
+    background-color:#F2F2F2;
+
+
+}
+
+
+.blog
+{
+    margin-top:50px;
+    text-align: center;
+    padding-left: 70px;
+
+}
+
+.address
+{
+    width:100%;
+    height:auto;
+    background-color:#1D5677;
+
+}
+.address-main
+{
+    width:90%;
+    height:auto;
+    margin:auto;
+}
+#about-company
+{
+    color:#CEE3F6;
+    margin-top:40px;
+    font-size:13px;
+}
+
+#about-company2
+{
+    font-size:12px;
+
+}
+.list a
+{
+    color:#CEE3F6;
+    text-decoration:none;
+
+
+}
+.list
+{
+    list-style-type:none;
+    margin-left:-20px;
+}
+.companyh4
+{
+    margin-left:20px;
+
+}
+
+#blog-adsress
+{
+    color:#CEE3F6;
+    margin-top:40px;
+}
+
+.one-blog img
+{
+    float:left;
+    width:50px;
+}
+.one-blog p
+{
+    clear:right;
+    margin-left:60px;
+
+
+}
+#btncolor
+{
+    background-color:#FA5858;
+    border:1px solid #FA5858;
+}
+.address h4
+{
+    font-weight:bold;
+}
+#twit
+{
+    font-weight:bold;
+}
+
+#inpt
+{
+    margin-left:-15px;
+    width:280px;
+}
+
+
+
+.glyphicon-chevron-up
+{
+    color:#CEE3F6;
+    margin-top:10px;
+}
+
+#copy
+{
+
+    color:#CEE3F6;
+    margin-top:30px;
+}
+#thum
+{
+    padding:0px;
+    margin:0px;
+}
+
+#image_aboutus{
+    background-image: url("https://dabconnection.com/wp-content/uploads/2017/03/work-with-us.jpg");
+
+
+}
+
+
+
+/*fin about us */
+.fiche{
+    border: solid 3px black;
+    border-radius: 8px;
+    margin: 10px;
+
+}
+
+.head-fiche{
+    color:white;
+    background-color:black;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-fiche{
+    padding: 20px;
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -142px;
+}
+
+.push{
+    height: 142px;
+}
+
+

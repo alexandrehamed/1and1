@@ -1,13 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
+    @if (Auth::check())
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
 
                     <div class="panel-body col-md-offset-1">
-                        <h1>Modification d'article</h1>
+                        <h1>Modification d'annonce</h1>
 
 
 
@@ -30,4 +31,7 @@
             </div>
         </div>
     </div>
+    @else
+        <h1>Connectez-vous</h1>
+    @endif
 @endsection

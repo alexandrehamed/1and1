@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Majord-Home</title>
+    <link rel="shortcut icon" href="{{ asset('images/avatar/default.png') }}">
+    <title>Majord'Home</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -21,6 +22,7 @@
     <![endif]-->
 </head>
 <body>
+<div class="wrapper">
 <nav class="navbar navbar-default navbar-static-top">
 
     <div class="container">
@@ -51,42 +53,46 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                    <li><a href="{{ route('register') }}">Register</a></li>
+                    <li><a href="{{ route('login') }}">Connexion</a></li>
+                    <li><a href="{{ route('register') }}">Inscription</a></li>
                 @else
+                    @if (Auth::user()->is_admin == 1)
                     <li>
                         <a href="{{ url('/admin') }}">Admin</a>
                     </li>
+                    @endif
                     <li>
                         <a href="{{ url('/article') }}">Les offres</a>
                     </li>
                     <li>
                         <a href="{{ url('/home') }}">Mes annonces</a>
                     </li>
-
-
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            Messages <span class="caret"></span>
-                        </a>
-
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="/messages">Voir les Messages @include('messenger.unread-count')</a></li>
-                            <li><a href="/messages/create">Creer un nouveau message</a></li>
-                        </ul>
+                    <li>
+                        <a href="{{ url('/article/create') }}">Créer une annonce</a>
                     </li>
+                    
 
+                    <li>
+                        <a href="{{ url('/aboutus') }}">A propos de nous</a>
+                    </li>
+                    <!--
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            Images <span class="caret"></span>
+                            Galerie <span class="caret"></span>
                         </a>
-
+                        <!
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="/showLists">Voir les Images </a></li>
                             <li><a href="imageUploadForm">upload une nouvelle image</a></li>
                         </ul>
                     </li>
+                    -->
+
+
+
+
+
+
 
 
 
@@ -106,7 +112,7 @@
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                    Logout
+                                    Déconnexion
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -121,11 +127,14 @@
 </nav>
 
 
-
     @yield('content')
+    <div class="push"></div>
+</div>
 
 
-<footer id="myFooter">
+
+
+<footer id="myFooter" class="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -135,7 +144,17 @@
                 <h5>Navigation</h5>
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ route('logout') }}">Déconnexion</a></li>
+                    <li>
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Deconnexion
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
 
                 </ul>
             </div>

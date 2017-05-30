@@ -14,14 +14,21 @@ Pour lancer le projet : php artisan serve
 
 */
 
+use App\Http\Middleware\isAdmin;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/aboutus', function () {
+    return view('aboutus');
 });
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
 
 //ici , tout les url qui commencent par article auron article controller //
 
@@ -42,15 +49,15 @@ Route::delete('article/{id}/comment', [
     'as'   => 'article.destroyCom',
     'uses' => 'ArticleController@destroyCom'
 ]);
-Route::get('/admin', 'AdminController@adminhome');
-Route::get('/admin/show/{id}', 'AdminController@show');
-Route::get('/admin/articles', 'AdminController@articlesAdmin');
-Route::get('/admin/userlist', 'AdminController@userAdmin');
+Route::get('/admin', 'AdminController@adminhome')->middleware(isAdmin::class);
+Route::get('/admin/show/{id}', 'AdminController@show')->middleware(isAdmin::class);
+Route::get('/admin/articles', 'AdminController@articlesAdmin')->middleware(isAdmin::class);
+Route::get('/admin/userlist', 'AdminController@userAdmin')->middleware(isAdmin::class);
 
 Route::delete('/admin/userlist/{id}', [
     'as'   => 'admin.destroyUser',
     'uses' => 'AdminController@destroyUser'
-]);
+])->middleware(isAdmin::class);
 
 Route::group(['prefix' => 'messages'], function () {
     Route::get('/', ['as' => 'messages', 'uses' => 'MessagesController@index']);

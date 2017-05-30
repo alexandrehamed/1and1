@@ -40,20 +40,27 @@
                                 <h2>{{ $article->title}}</h2>
                                 <br>
                                 <strong>Créé par {{$article->user->name }}</strong>
+                                <p>{{$article->user->email}}</p>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <p>{{ str_limit($article->content,150,2)}}</p>
                                     </div>
                                 </div>
                                 <a href="{{ route('article.show', $article->id) }}"><button class="btn btn-liste">Plus d'information  <span class="glyphicon glyphicon-chevron-right anim"></span></button></a>
+
                             </div>
 
                         </div>
                         <hr>
                         @empty
                             <h2>Aucun article</h2>
+
                         @endforelse
+
+
                         {{$articles->links()}}
+
+
                     </div>
                 </div>
             </div>
