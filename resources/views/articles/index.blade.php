@@ -30,7 +30,7 @@
                     <div class="col-md-10 itembox ">
                         @forelse($articles as $article)
 
-                        <div class="row {{ $article->categorie->name }}">
+                        <div class="row ">
                             <div class="col-md-4">
                                 <img src="/images/annonce/{{ $article->image }}" style=" float:left; margin-right:25px;" class="img-responsive" alt="">
 
