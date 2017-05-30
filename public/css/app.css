@@ -274,24 +274,7 @@ background-image: url("https://images.pexels.com/photos/284847/pexels-photo-2848
         text-align: center;
     }
 }
-.category{
-    color: black;
-    background-color: white;
-}
 
-.category-bg:before{
-    background-color: white;
-}
-
-.category-bg:hover{
-background-color: black;
-    color: white;
-    transition: 1s;
-}
-
-.category-bg:after{
-    background-color: white;
-}
 
 /*fin footer*/
 
@@ -532,4 +515,33 @@ html,body{
     height: 142px;
 }
 
+/*style side bar*/
 
+
+.sidebar{
+    background-color: black;
+}
+.category-btn{
+    color: black;
+    text-decoration: none !important;
+}
+
+.category-btn {
+
+}
+
+
+.category-btn:hover{
+    cursor: pointer;
+}
+
+
+.category-bg:before{
+}
+
+.category-bg:hover{
+    cursor: pointer;
+}
+
+.category-bg:after{
+}

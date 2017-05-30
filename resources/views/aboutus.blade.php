@@ -57,7 +57,6 @@
                                         <h5>Romain Giraud</h5>
                                         <p class="txt">Chef De La Horde</p>
                                         <p>Romain, alias Cakebool, est un redoutable chaman du laravel</p>
-                                        <p class="icon"><img src="https://loebig.files.wordpress.com/2013/10/facebook2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/10/gplus2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/06/2twitter2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/10/link2_24x24.png?w=640"/>  </p>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +67,6 @@
                                         <h5>Alexandre Hamed</h5>
                                         <p class="txt">Patron du Rap Game</p>
                                         <p>Quintuple champion du monde de dab en souplesse</p>
-                                        <p class="icon"><img src="https://loebig.files.wordpress.com/2013/10/facebook2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/10/gplus2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/06/2twitter2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/10/link2_24x24.png?w=640"/>  </p>
                                     </div>
                                 </div>
                             </div>
@@ -81,8 +79,6 @@
                                         <h5>Guillaume Claisse</h5>
                                         <p class="txt">Le Petit Prince</p>
                                         <p>Génie absolu du dessin de visage en navet</p>
-                                        <p class="icon"><img src="https://loebig.files.wordpress.com/2013/10/facebook2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/10/gplus2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/06/2twitter2_24x24.png?w=640"/>  <img src="https://loebig.files.wordpress.com/2013/10/link2_24x24.png?w=640"/>  </p>
-
                                     </div>
                                 </div>
                             </div>

@@ -14,11 +14,15 @@
     <section class="bg-content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2">
-                    <h1>nav categorie</h1>
-                    <div class="filter-menu" id="filter">
+                <div class="col-md-2 text-center">
+                    <h1 class="birch">categorie</h1>
+                    <div class="">
                         @foreach($categories as $categorie)
-                        <a href="{{ route('categorie.show', $categorie->id) }}"><button class="btn btn-default"> {{ $categorie->name }}</button></a>
+                            <div class="category-bg">
+                                <a href="{{ route('categorie.show', $categorie->id) }}" class="category-btn"> {{ $categorie->name }}</a>
+                                <br>
+                                <hr>
+                            </div>
                         @endforeach
                     </div>
                 </div>
